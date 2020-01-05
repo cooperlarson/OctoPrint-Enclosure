@@ -20,7 +20,7 @@ else:
 strip = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT)
 strip.begin()
 
-color = Color(red, green, blue)
+color = Color(green, red, blue, 100)
 
 for i in range(LED_COUNT):
     strip.setPixelColor(i, color)
